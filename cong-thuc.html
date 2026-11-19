@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Công thức — Cẩm nang Cocktail &amp; Mocktail</title>
+<meta name="description" content="166 công thức có bộ lọc, tìm kiếm, tăng số ly và đổi đơn vị.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#15110d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Pha chế">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
+<link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+</head>
+<body>
+<nav class="top" aria-label="Điều hướng chính">
+  <div class="wrap">
+    <a class="brand" href="index.html">🍸<span> Cẩm nang pha chế</span></a>
+    <div class="links">
+      <a href="tong-quan.html">Tổng quan</a>
+      <a href="lich-su.html">Lịch sử</a>
+      <a href="dung-cu.html">Dụng cụ</a>
+      <a href="nguyen-lieu.html">Nguyên liệu</a>
+      <a href="ky-thuat.html">Kỹ thuật</a>
+      <a href="ly-va-da.html">Ly &amp; đá</a>
+      <a href="cong-thuc.html" aria-current="page">Công thức</a>
+      <a href="syrup.html">Syrup &amp; nền</a>
+      <a href="meo-pha-che.html">Mẹo</a>
+      <a href="thuat-ngu.html">Thuật ngữ</a>
+      <a href="uong-co-trach-nhiem.html">Uống có trách nhiệm</a>
+    </div>
+    <button class="iconbtn" id="themeBtn" title="Đổi giao diện sáng/tối" aria-label="Đổi giao diện sáng hoặc tối">🌓</button>
+  </div>
+</nav>
+<main>
+<section class="page">
+  <div class="wrap">
+<span class="eyebrow">Công thức</span>
+    <h2>Thư viện công thức</h2>
+    <p class="lead">Nhấp vào một thức uống để xem nguyên liệu, các bước thực hiện, mẹo và có thể tăng số ly. Dùng bộ lọc để tìm đúng thứ bạn thích.</p>
+
+    <div class="toolbar">
+      <input class="search" id="q" type="search" placeholder="🔍 Tìm theo tên, nguyên liệu, hương vị… (ví dụ: bạc hà, rum, chua)" aria-label="Tìm công thức">
+      <details class="fdet" open><summary>🎛️ Bộ lọc</summary>
+      <div class="filters">
+        <div class="fgroup" id="fType"><label>Loại</label></div>
+        <div class="fgroup" id="fBase"><label>Nền</label></div>
+        <div class="fgroup" id="fFlavor"><label>Vị</label></div>
+        <div class="fgroup" id="fDiff"><label>Độ khó</label></div>
+        <div class="fgroup" id="fIba"><label>IBA</label></div>
+        <div class="fgroup" id="fFam"><label>Họ</label></div>
+        <div class="fgroup" id="fOcc"><label>Dịp</label></div>
+        <div class="fgroup" id="fSort"><label>Sắp xếp</label></div>
+        <div class="fgroup" id="fMisc"><label>Khác</label></div>
+      </div>
+      </details>
+      <p class="count" id="count" aria-live="polite"></p>
+    </div>
+    <div class="rgrid" id="rgrid"></div>
+<div class="pager">
+  <a href="ly-va-da.html"><small>← Trước</small>🍸 Ly &amp; đá</a>
+  <a class="next" href="syrup.html"><small>Tiếp →</small>🍯 Syrup &amp; nền</a>
+</div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">Web app chạy offline sau lần mở đầu — dữ liệu yêu thích và giao diện được lưu trong trình duyệt của bạn.<br>
+  Lượng nguyên liệu dựa trên các công thức chuẩn phổ biến (như IBA); khẩu vị có thể điều chỉnh. Hãy thưởng thức có trách nhiệm. 🥂</div>
+</footer>
+<dialog id="dlg" aria-labelledby="dTitle">
+  <div class="mhead" id="dHead">
+    <button class="iconbtn mclose" id="dClose" aria-label="Đóng">✕</button>
+    <div class="big" id="dEmoji"></div>
+    <h2 id="dTitle"></h2>
+    <div id="dTags"></div>
+  </div>
+  <div class="mbody" id="dBody"></div>
+</dialog>
+<script src="assets/data.js"></script>
+<script src="assets/recipes-ext.js"></script>
+<script src="assets/recipes-c1.js"></script>
+<script src="assets/recipes-c2.js"></script>
+<script src="assets/recipes-c3.js"></script>
+<script src="assets/recipes-m.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
